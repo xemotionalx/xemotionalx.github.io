@@ -1,0 +1,8 @@
+.section-about {
+    @include section-settings($color-primary);
+
+    
+    &--intro {
+        padding: 5rem 20rem;
+    }
+}

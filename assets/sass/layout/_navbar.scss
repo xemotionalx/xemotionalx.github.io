@@ -1,0 +1,41 @@
+.navbar {
+    width: 100%;
+    overflow: hidden;
+    z-index:100;
+    text-align: center;
+    
+    background-color: $color-black;
+    border-bottom: 3px solid $color-primary-dark;
+
+    a:link {
+      display: inline-block;
+      font-weight: 600;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    a {
+      color: $color-primary-light;
+      text-transform: uppercase;
+    }
+
+    a:hover {
+      color: $color-primary-dark;
+    }
+}
+
+  .content {
+    padding: 16px;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }

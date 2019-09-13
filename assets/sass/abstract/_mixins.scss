@@ -1,0 +1,13 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin section-settings($bg-color) {
+    height: 110vh;
+    background-color: $bg-color;
+    padding-top: 10rem;
+}

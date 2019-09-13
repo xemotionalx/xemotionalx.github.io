@@ -1,0 +1,27 @@
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: $default-font-size;
+    line-height: 1.7;
+    color: $color-grey-dark;
+}
+
+.heading-primary {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    text-shadow: .2rem .3rem .3rem rgba($color-primary, .5);
+
+    &--main {
+        color: $color-black;
+        font-weight: 800;
+        font-size: 6rem;
+    }
+
+    &--sub {
+        color: $color-black;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+}
+
