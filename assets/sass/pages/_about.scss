@@ -43,4 +43,29 @@
     top: 20%;
     left: 5%;
     }
+
+    &--2 {
+    max-height: 50rem;
+    max-width:20rem;
+    position:absolute;
+    top: 25%;
+    left: 30%;
+    }
+
+    &--3 {
+        max-height: 20rem;
+        max-width:20rem;
+        position:absolute;
+        top: 18%;
+        left: 55%;
+        border-radius: 50%;
+        }
+
+        &--4 {
+            max-height: 40rem;
+            max-width:20rem;
+            position:absolute;
+            top: 20%;
+            left:80%;
+            }
   }
