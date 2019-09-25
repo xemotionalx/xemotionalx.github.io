@@ -19,6 +19,8 @@
         href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap"
         rel="stylesheet">
 
+        <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap" rel="stylesheet">
+
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/3f7d57fead.js"></script>
 </head>
@@ -57,22 +59,22 @@
         </div>
 
         <section class="section-about" id="section-about">
-            <div class="heading-primary--main u-center-text u-margin-bottom-big">
+                <div class="wallpaper">
+            <div class="heading-section u-center-text u-margin-bottom-medium">
                 About Me
             </div>
+            <div class="frame">
+                    <img src="assets/images/about-me/design.jpg" alt="design" class="framed-img"/>
+            
 
-            <p class="section-about--intro">Front End Web Developer with web design experience leveraging a background
-                in education to create user friendly applications. Innovative problem solver with a creative lens for
-                every aspect of web development, from designing applications to front-end user interface. Able to adapt
-                and learn new skills quickly as well as stay organized and meet deadlines under pressure. Enthusiastic
-                team member proven to effectively take on leadership roles to design and facilitate projects. Seeking a
-                stimulating and collaborative environment where design and technology meet to make the world a better
-                place.
-            </p>
+            </div>
+            <img src="assets/images/about-me/selfportrait.png" alt="MaiAda" class="selfportrait-img">
+            <img src="assets/images/about-me/fam-couch.png" alt="My Family" class="family-img">
+            <div class="trapezoid"></div>
         </section>
 
         <section class="section-portfolio" id="section-portfolio">
-            <div class="heading-primary--main u-center-text u-margin-bottom-big">
+            <div class="heading-section u-center-text u-margin-bottom-big">
                 Portfolio
             </div>
 
@@ -126,7 +128,7 @@
                 <div class="col-1-of-4">
                     <div class="portfolio-card">
                         <a href="#dreamseed-popup">
-                            <img src="assets/images/portfolio/portfolio-icon-6.png" alt="adventure time rpg"
+                            <img src="assets/images/portfolio/portfolio-icon-6.png" alt="a dream seed, inc"
                                 class="portfolio-card__img">
                         </a>
                     </div>
@@ -135,7 +137,10 @@
 
                 <div class="col-1-of-4">
                     <div class="portfolio-card">
-
+                        <a href="#trains-popup">
+                            <img src="assets/images/portfolio/portfolio-icon-7.png" alt="train scheduler"
+                                class="portfolio-card__img">
+                        </a>
                     </div>
                 </div>
 
@@ -258,6 +263,28 @@
 
             <div class="popup__text">
                 Nonprofit website created for client A Dream Seed, Inc utlilizing Sass.
+            </div>
+        </div>
+    </div>
+
+    <!-- TRAIN SCHEDULER POPUP -->
+    <div class="popup" id="trains-popup">
+        <div class="popup__content" id="portfolio-1">
+            <div class="popup__links">
+                <a href="#section-portfolio"><button class="popup__btn popup__btn--exit">&times;</button></a>
+                <a href="https://xemotionalx.github.io/a-dream-seed" target="_blank"><button
+                        class="popup__btn popup__btn--link">Click to view!</button></a>
+            </div>
+
+            <img src="assets/images/portfolio/screenshots/portfolio-screenie-7.png" alt="giphy grrl pwr screenshot"
+                class="popup__screenshot">
+
+                <i class="fab fa-bootstrap popup__icons"></i>
+                <i class="fas fa-code-branch popup__icons"></i>
+                <i class="far fa-clock popup__icons"></i>
+
+            <div class="popup__text">
+                A mini project that allows the user to schedule a fictional train made with firebase and moment.js.
             </div>
         </div>
     </div>
