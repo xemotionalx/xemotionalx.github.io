@@ -151,7 +151,9 @@ body {
   background-image: url(../images/about-me/pink-wallpaper.jpg);
   background-repeat: repeat;
   width: calc(100% - 10rem);
-  height: 100vh; }
+  height: 100vh;
+  padding: 0 1rem;
+  z-index: 2; }
 
 .row {
   max-width: 114rem;
@@ -187,17 +189,15 @@ body {
 .navbar {
   width: 100%;
   overflow: hidden;
-  z-index: 100;
-  text-align: center;
-  background-color: #000;
-  border-bottom: 3px solid #feaea5; }
+  z-index: 100; }
   .navbar a:link {
-    display: inline-block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600;
     text-align: center;
-    padding: 14px 16px;
+    padding: 0 16px;
     text-decoration: none;
-    font-size: 17px; }
+    font-size: 17px;
+    text-shadow: 0.2rem 0.3rem 0.4rem rgba(0, 0, 0, 0.4); }
   .navbar a {
     color: #ffd1c3;
     text-transform: uppercase; }
@@ -240,37 +240,30 @@ body {
   z-index: 51; }
 
 .framed-img {
-  border: solid 1rem #f4c2c2;
-  border-bottom-color: #feaea5;
-  border-left-color: #ffd1c3;
-  border-right-color: #ffd1c3;
-  border-top-color: #feaea5;
-  box-shadow: 0 0.3rem 0.4rem rgba(0, 0, 0, 0.3); }
-  .framed-img--1 {
-    max-height: 20rem;
-    max-width: 20rem;
-    position: absolute;
-    top: 20%;
-    left: 5%; }
-  .framed-img--2 {
-    max-height: 50rem;
-    max-width: 20rem;
-    position: absolute;
-    top: 25%;
-    left: 30%; }
-  .framed-img--3 {
-    max-height: 20rem;
-    max-width: 20rem;
-    position: absolute;
-    top: 18%;
-    left: 55%;
-    border-radius: 50%; }
-  .framed-img--4 {
-    max-height: 40rem;
-    max-width: 20rem;
-    position: absolute;
-    top: 20%;
-    left: 80%; }
+  width: 100%;
+  position: relative;
+  padding: .5rem; }
+  .framed-img__pic {
+    width: 100%;
+    position: relative;
+    border: solid 1rem #f4c2c2;
+    border-bottom-color: #feaea5;
+    border-left-color: #ffd1c3;
+    border-right-color: #ffd1c3;
+    border-top-color: #feaea5;
+    box-shadow: 0 0.3rem 0.4rem rgba(0, 0, 0, 0.3); }
+  .framed-img:hover {
+    transform: translateY(-0.5rem);
+    cursor: pointer; }
+
+.framed-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 99;
+  display: none; }
 
 .section-home {
   height: 100vh;
@@ -290,6 +283,6 @@ body {
 
 .section-portfolio {
   height: 110vh;
-  background-color: #ffd1c3;
+  background-color: #21005b;
   padding-top: 10rem;
   position: relative; }

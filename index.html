@@ -11,15 +11,14 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- JS & JQUERY -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
-    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Google Fonts-->
     <link
         href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap"
         rel="stylesheet">
 
-        <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/3f7d57fead.js"></script>
@@ -51,30 +50,63 @@
             </div>
         </section>
 
-        <div class="navbar" id="navbar">
-            <a href="#section-contact" class="navbar__link">Contact</a>
-            <a href="#section-portfolio" class="navbar__link">Portfolio</a>
-            <a href="#section-about" class="navbar__link">About</a>
-            <a href="#section-home" class="navbar__link">Home</a>
-        </div>
-
         <section class="section-about" id="section-about">
-                <div class="wallpaper">
-            <div class="heading-section u-center-text u-margin-bottom-medium">
-                About Me
-            </div>
+                
 
-            <img src="assets/images/about-me/design.jpg" alt="design" class="framed-img framed-img--1">
-            <img src="assets/images/about-me/developer.jpg" alt="developer" class="framed-img framed-img--2">
-            <img src="assets/images/about-me/philly.jpg" alt="philly" class="framed-img framed-img--3">
-            <img src="assets/images/about-me/passion.jpg" alt="dream" class="framed-img framed-img--4">
-            </div>
+            <div class="trapezoid"></div>
 
-            
-            
+            <div class="navbar" id="navbar">
+                    <a href="#section-contact" class="navbar__link">Contact</a>
+                    <a href="#section-portfolio" class="navbar__link">Portfolio</a>
+                    <a href="#section-about" class="navbar__link">About</a>
+                    <a href="#section-home" class="navbar__link">Home</a>
+                </div>
+
+            <div class="wallpaper">
+                <div class="heading-section u-center-text">
+                    About Me
+                </div>
+                <div class="row">
+                    <div class="col-1-of-4">
+                        <div class="framed-img" id="about-me-1" value=1>
+                            <img src="assets/images/about-me/design.jpg" alt="humble beginnings" class="framed-img__pic">
+                            <div class="framed-text framed-text--1">
+                                2000: Nerdy story about programming
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-1-of-4">
+                            <div class="framed-img" id="about-me-2" value=2>
+                                    <img src="assets/images/about-me/developer.jpg" alt="resume" class="framed-img__pic">
+                                    <div class="framed-text framed-text--2">
+                                        2000: Nerdy story about programming
+                                    </div>
+                                </div>
+                    </div>
+
+                    <div class="col-1-of-4">
+                            <div class="framed-img" id="about-me-2" value=3>
+                                    <img src="assets/images/about-me/philly.jpg" alt="philly" class="framed-img__pic">
+                                    <div class="framed-text framed-text--3">
+                                        2000: Nerdy story about programming
+                                    </div>
+                                </div>
+                    </div>
+
+                    <div class="col-1-of-4">
+                            <div class="framed-img" id="about-me-2" value=4>
+                                    <img src="assets/images/about-me/passion.jpg" alt="dream" class="framed-img__pic">
+                                    <div class="framed-text framed-text--4">
+                                        2000: Nerdy story about programming
+                                    </div>
+                                </div>
+                    </div>
+                </div>
+            </div>
             <img src="assets/images/about-me/selfportrait.png" alt="MaiAda" class="selfportrait-img">
             <img src="assets/images/about-me/fam-couch.png" alt="My Family" class="family-img">
-            <div class="trapezoid"></div>
+
         </section>
 
         <section class="section-portfolio" id="section-portfolio">
@@ -187,7 +219,7 @@
 
     <!-- RPG POPUP-->
     <div class="popup" id="rpg-popup">
-        <div class="popup__content" id="portfolio-1">
+        <div class="popup__content" id="portfolio-2">
             <div class="popup__links">
                 <a href="#section-portfolio"><button class="popup__btn popup__btn--exit">&times;</button></a>
                 <a href="https://xemotionalx.github.io/rpg-game/" target="_blank"><button
@@ -209,7 +241,7 @@
 
     <!-- EMO TRIVIA POPUP -->
     <div class="popup" id="trivia-popup">
-        <div class="popup__content" id="portfolio-1">
+        <div class="popup__content" id="portfolio-3">
             <div class="popup__links">
                 <a href="#section-portfolio"><button class="popup__btn popup__btn--exit">&times;</button></a>
                 <a href="https://xemotionalx.github.io/trivia-game/" target="_blank"><button
@@ -230,7 +262,7 @@
 
     <!-- GIPHY GRRL PWR POPUP -->
     <div class="popup" id="giphyapi-popup">
-        <div class="popup__content" id="portfolio-1">
+        <div class="popup__content" id="portfolio-4">
             <div class="popup__links">
                 <a href="#section-portfolio"><button class="popup__btn popup__btn--exit">&times;</button></a>
                 <a href="https://xemotionalx.github.io/giphy-api/" target="_blank"><button
@@ -253,7 +285,7 @@
 
     <!-- A DREAM SEED POPUP -->
     <div class="popup" id="dreamseed-popup">
-        <div class="popup__content" id="portfolio-1">
+        <div class="popup__content" id="portfolio-5">
             <div class="popup__links">
                 <a href="#section-portfolio"><button class="popup__btn popup__btn--exit">&times;</button></a>
                 <a href="https://xemotionalx.github.io/a-dream-seed" target="_blank"><button
@@ -273,7 +305,7 @@
 
     <!-- TRAIN SCHEDULER POPUP -->
     <div class="popup" id="trains-popup">
-        <div class="popup__content" id="portfolio-1">
+        <div class="popup__content" id="portfolio-6">
             <div class="popup__links">
                 <a href="#section-portfolio"><button class="popup__btn popup__btn--exit">&times;</button></a>
                 <a href="https://xemotionalx.github.io/a-dream-seed" target="_blank"><button
@@ -283,15 +315,19 @@
             <img src="assets/images/portfolio/screenshots/portfolio-screenie-7.png" alt="giphy grrl pwr screenshot"
                 class="popup__screenshot">
 
-                <i class="fab fa-bootstrap popup__icons"></i>
-                <i class="fas fa-code-branch popup__icons"></i>
-                <i class="far fa-clock popup__icons"></i>
+            <i class="fab fa-bootstrap popup__icons"></i>
+            <i class="fas fa-code-branch popup__icons"></i>
+            <i class="far fa-clock popup__icons"></i>
 
             <div class="popup__text">
                 A mini project that allows the user to schedule a fictional train made with firebase and moment.js.
             </div>
         </div>
     </div>
+
+    <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
+
+
 
 </html>

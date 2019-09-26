@@ -29,43 +29,34 @@
 //Picture Frames
 
 .framed-img {
-    border:solid 1rem $color-primary;
+        width: 100%;
+        position: relative;
+        padding: .5rem;
+
+    &__pic {
+        width: 100%;
+        position: relative;
+
+        border:solid 1rem $color-primary;
     border-bottom-color:$color-primary-dark;
     border-left-color:$color-primary-light;
     border-right-color:$color-primary-light;
     border-top-color:$color-primary-dark;
     box-shadow: 0 .3rem .4rem rgba(0, 0, 0, .3);
-
-    &--1 {
-    max-height: 20rem;
-    max-width:20rem;
-    position:absolute;
-    top: 20%;
-    left: 5%;
     }
 
-    &--2 {
-    max-height: 50rem;
-    max-width:20rem;
-    position:absolute;
-    top: 25%;
-    left: 30%;
+    &:hover {
+        transform: translateY(-.5rem);
+        cursor: pointer;
     }
-
-    &--3 {
-        max-height: 20rem;
-        max-width:20rem;
-        position:absolute;
-        top: 18%;
-        left: 55%;
-        border-radius: 50%;
-        }
-
-        &--4 {
-            max-height: 40rem;
-            max-width:20rem;
-            position:absolute;
-            top: 20%;
-            left:80%;
-            }
+    
   }
+
+  .framed-text {
+      @include absoluteCenter;
+      position: absolute;
+      z-index: 99;
+      display: none;
+  }
+
+  
