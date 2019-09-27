@@ -216,7 +216,7 @@ body {
   padding-top: 60px; }
 
 .section-about {
-  height: 110vh;
+  min-height: 110vh;
   background-color: #f4c2c2;
   padding-top: 10rem;
   position: relative; }
@@ -282,7 +282,44 @@ body {
     padding: 10rem; }
 
 .section-portfolio {
-  height: 110vh;
+  min-height: 110vh;
   background-color: #21005b;
   padding-top: 10rem;
   position: relative; }
+
+.tarot-card {
+  background-image: linear-gradient(to bottom, #04145b, #21005b);
+  box-shadow: 0.3rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+  border: 1rem solid #feaea5;
+  border-radius: .5rem;
+  height: 50rem;
+  position: relative; }
+
+.tarot-border {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 0.5rem solid #feaea5;
+  height: 46rem;
+  width: 95%; }
+
+.tarot-img {
+  max-width: 95%; }
+  .tarot-img--container {
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.tarot-text {
+  color: #04145b;
+  font-family: 'Yeseva One', cursive;
+  font-size: 3rem;
+  padding: 1rem;
+  background-color: #f4c2c2;
+  border: 0.5rem solid #feaea5;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
