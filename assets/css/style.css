@@ -85,7 +85,8 @@ body {
     opacity: 1;
     visibility: visible; }
   .popup__btn {
-    color: #777;
+    color: crimson;
+    font-weight: 700;
     text-transform: uppercase;
     background-color: #ffd1c3;
     border-radius: .3rem;
@@ -104,7 +105,7 @@ body {
       float: right;
       margin: .5rem;
       background-image: linear-gradient(to bottom left, #feaea5, #ffd1c3);
-      border-color: rgba(254, 174, 165, 0.8); }
+      border-color: #feaea5; }
   .popup__content {
     position: absolute;
     top: 50%;
@@ -120,7 +121,7 @@ body {
     display: block;
     margin-left: 1rem;
     font-size: 3rem;
-    background-image: linear-gradient(to right, #1b1b1b, #feaea5);
+    background-image: linear-gradient(to right, #fc766a, #feaea5);
     -webkit-background-clip: text;
     color: transparent;
     box-shadow: 0 0.2 0.4 rgba(0, 0, 0, 0.5); }
