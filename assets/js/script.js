@@ -1,20 +1,22 @@
+//import { relative } from "path";
+
 document.addEventListener('DOMContentLoaded', function() {
 
-/** NAVBAR **/
+    /** NAVBAR **/
 
-window.onscroll = function() {navFunction()};
-// Get the navbar
-var navbar = document.getElementById("navbar");
-// Get the offset position of the navbar
-var sticky = navbar.offsetTop;
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function navFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky");
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
+    window.onscroll = function() { navFunction() };
+    // Get the navbar
+    var navbar = document.getElementById("navbar");
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function navFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky");
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
 
 });
 
@@ -24,41 +26,47 @@ var imgClicked = false;
 
 function imgOnClick() {
 
-  var number = $(this).attr("value");
+    var number = $(this).attr("value");
 
-  if (imgClicked) {
+    if (imgClicked) {
+        $(this).animate({
+            width: '100%',
+            top: '0%',
+            left: '0%',
+        });
 
-    $(this).animate({
-      width: '100%',
-    });
+        $(this).css("z-index", "999");
 
-    $(this).css("z-index", "2");
-    
-    $(".framed-text--" + number).css("display", "none");
-    imgClicked = false;
+        $('#framed-img-' + number).removeClass("fade-filter");
 
-  } else {
+        $(".framed-text--" + number).css("display", "none");
 
-    if (number === 2 || number === 4) {
-      $(this).animate({
-        width: '100px',
-        height: 'auto'
-      });
+        imgClicked = false;
+
     } else {
-    $(this).animate({
-      width: '200%',
-    });
-  }
+        if (number === "2" || number === "4") {
+            console.log(number);
+            $(this).animate({
+                width: '148%',
+                position: 'absoulute',
+                top: '50%',
+                left: '-50%',
+            });
+        } else {
+            $(this).animate({
+                width: '200%',
+            });
+        }
 
-  $(this).css("z-index", "98");
+        $(this).css("z-index", "9000");
 
-  $(".framed-text--" + number).css("display", "block");
-  imgClicked = true;
-  }
+        $('#framed-img-' + number).addClass("fade-filter");
+
+        $(".framed-text--" + number).css("display", "block");
+        imgClicked = true;
+    }
 
 };
 
 
 $(document).on("click", ".framed-img", imgOnClick);
-
-

@@ -16,7 +16,6 @@ body {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 400;
   font-size: 2rem;
-  line-height: 1.7;
   color: #1b1b1b; }
 
 .heading-primary {
@@ -88,7 +87,7 @@ body {
   .popup__btn {
     color: #777;
     text-transform: uppercase;
-    background-color: #fff;
+    background-color: #ffd1c3;
     border-radius: .3rem;
     outline: none;
     box-shadow: none;
@@ -102,19 +101,17 @@ body {
       .popup__btn--exit:hover {
         color: #feaea5; }
     .popup__btn--link {
-      border: 0.3rem solid #777;
       float: right;
-      margin: .5rem; }
-      .popup__btn--link:hover {
-        background-image: linear-gradient(to bottom left, #feaea5, #ffd1c3);
-        border-color: rgba(254, 174, 165, 0.8); }
+      margin: .5rem;
+      background-image: linear-gradient(to bottom left, #feaea5, #ffd1c3);
+      border-color: rgba(254, 174, 165, 0.8); }
   .popup__content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 50%;
-    background-color: #fff;
+    background-color: #ffd1c3;
     box-shadow: 0.5 0.7 0.4 rgba(0, 0, 0, 0.7);
     border-radius: .3rem; }
   .popup__screenshot {
@@ -123,7 +120,7 @@ body {
     display: block;
     margin-left: 1rem;
     font-size: 3rem;
-    background-image: linear-gradient(to right, #ffd1c3, #feaea5);
+    background-image: linear-gradient(to right, #1b1b1b, #feaea5);
     -webkit-background-clip: text;
     color: transparent;
     box-shadow: 0 0.2 0.4 rgba(0, 0, 0, 0.5); }
@@ -229,7 +226,7 @@ body {
   bottom: 0;
   left: 20%;
   transform: translateX(-50%);
-  z-index: 52; }
+  z-index: 999; }
 
 .family-img {
   height: 50rem;
@@ -237,12 +234,13 @@ body {
   bottom: -10%;
   left: 60%;
   transform: translateX(-50%);
-  z-index: 51; }
+  z-index: 998; }
 
 .framed-img {
   width: 100%;
   position: relative;
-  padding: .5rem; }
+  padding: .5rem;
+  text-align: center; }
   .framed-img__pic {
     width: 100%;
     position: relative;
@@ -252,18 +250,82 @@ body {
     border-right-color: #ffd1c3;
     border-top-color: #feaea5;
     box-shadow: 0 0.3rem 0.4rem rgba(0, 0, 0, 0.3); }
+  .framed-img__text {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    background-color: rgba(254, 174, 165, 0.8);
+    z-index: 99;
+    display: none;
+    padding: 1rem;
+    height: 50%;
+    border-radius: .5rem; }
+  .framed-img__heading {
+    font-family: 'Yeseva One', cursive;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 1rem; }
+  .framed-img p {
+    line-height: 1.7rem;
+    text-align: left; }
   .framed-img:hover {
     transform: translateY(-0.5rem);
     cursor: pointer; }
 
-.framed-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  z-index: 99;
-  display: none; }
+.fade-filter {
+  filter: grayscale(100%) blur(1px); }
+
+.section-contact {
+  min-height: 110vh;
+  background-color: #f4c2c2;
+  padding-top: 10rem;
+  position: relative; }
+
+.contact-container {
+  width: 80%;
+  text-align: center; }
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical; }
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #fc766a;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; }
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #fc766a; }
+
+/* Add a background color and some padding around the form */
+.contact-container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 0 auto; }
 
 .section-home {
   height: 100vh;
@@ -285,7 +347,8 @@ body {
   min-height: 110vh;
   background-color: #21005b;
   padding-top: 10rem;
-  position: relative; }
+  position: relative;
+  padding-bottom: 20rem; }
 
 .tarot-card {
   background-image: linear-gradient(to bottom, #04145b, #21005b);
@@ -315,7 +378,7 @@ body {
 .tarot-text {
   color: #04145b;
   font-family: 'Yeseva One', cursive;
-  font-size: 3rem;
+  font-size: 2vw;
   padding: 1rem;
   background-color: #f4c2c2;
   border: 0.5rem solid #feaea5;

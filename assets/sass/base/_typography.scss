@@ -2,7 +2,7 @@ body {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 400;
     font-size: $default-font-size;
-    line-height: 1.7;
+    // line-height: 1.5rem;
     color: $color-grey-dark;
 }
 
@@ -12,13 +12,11 @@ body {
     letter-spacing: 1rem;
     text-shadow: .2rem .3rem .3rem rgba($color-primary, .5);
     font-family: 'Yeseva One', cursive;
-
     &--main {
         color: $color-black;
         font-weight: 800;
         font-size: 6rem;
     }
-
     &--sub {
         color: $color-black;
         font-size: 3rem;
@@ -33,4 +31,3 @@ body {
     font-size: 10rem;
     z-index: 10;
 }
-

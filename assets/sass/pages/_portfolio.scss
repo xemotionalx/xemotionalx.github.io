@@ -1,5 +1,6 @@
 .section-portfolio {
     @include section-settings(#21005b);
+    padding-bottom: 20rem;
 }
 
 .tarot-card {
@@ -16,13 +17,10 @@
     border: .5rem solid $color-primary-dark;
     height: 46rem;
     width: 95%;
-    
 }
 
 .tarot-img {
-    
     max-width: 95%;
-
     &--container {
         height: 40rem;
         display: flex;

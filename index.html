@@ -34,24 +34,21 @@
                     <h2 class="heading-primary heading-primary--sub">Full Stack Web Developer</h2>
 
                     <button class="btn btn--circle btn-icon">
-                        <a href="#"><i class="far fa-envelope btn__icon"></i></a>
+                        <a href="#section-contact"><i class="far fa-envelope btn__icon"></i></a>
                     </button>
 
                     <button class="btn btn--circle btn-icon">
-                        <a href="#"><i class="fab fa-github-alt btn__icon"></i></a>
+                        <a href="https://github.com/xemotionalx" target="_blank"><i class="fab fa-github-alt btn__icon"></i></a>
                     </button>
 
                     <button class="btn btn--circle btn-icon">
-                        <a href="#"><i class="fab fa-linkedin-in btn__icon"></i></a>
+                        <a href="https://www.linkedin.com/in/maiadac/" target="_blank"><i class="fab fa-linkedin-in btn__icon"></i></a>
                     </button>
                 </div>
             </div>
         </section>
 
         <section class="section-about" id="section-about">
-
-
-            <div class="trapezoid"></div>
 
             <div class="navbar" id="navbar">
                 <a href="#section-contact" class="navbar__link">Contact</a>
@@ -67,43 +64,50 @@
                 <div class="row">
                     <div class="col-1-of-4">
                         <div class="framed-img" id="about-me-1" value=1>
-                            <img src="assets/images/about-me/design.jpg" alt="humble beginnings" class="framed-img__pic">
-                            <div class="framed-text framed-text--1">
-                                2000: Nerdy story about programming
+                            <img src="assets/images/about-me/design.jpg" alt="humble beginnings" class="framed-img__pic" id="framed-img-1">
+                            <div class="framed-img__text framed-text--1">
+                                <h4 class="framed-img__heading">2001</h6>
+                                    <p>I first started coding on neopets when I was 12 years old. I'd spend hours teaching myself CSS and HTML so I could build the coolest petpages! I had no idea at the time that it would become a lifelong passion.</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-1-of-4">
                         <div class="framed-img" id="about-me-2" value=2>
-                            <img src="assets/images/about-me/developer.jpg" alt="resume" class="framed-img__pic">
-                            <div class="framed-text framed-text--2">
-                                2000: Nerdy story about programming
+                            <img src="assets/images/about-me/developer.jpg" alt="resume" class="framed-img__pic" id="framed-img-2">
+                            <div class="framed-img__text framed-text--2">
+                                <h4 class="framed-img__heading">My Resume</h6>
+                                    <button>Download My Resume</button>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-1-of-4">
-                        <div class="framed-img" id="about-me-2" value=3>
-                            <img src="assets/images/about-me/philly.jpg" alt="philly" class="framed-img__pic">
-                            <div class="framed-text framed-text--3">
-                                2000: Nerdy story about programming
+                        <div class="framed-img" id="about-me-3" value=3>
+                            <img src="assets/images/about-me/philly.jpg" alt="philly" class="framed-img__pic" id="framed-img-3">
+                            <div class="framed-img__text framed-text--3">
+                                <h4 class="framed-img__heading">2012-2019</h6>
+                                    <p>After college, I became a teacher. This experience has made me a stronger developer. It has given me the tools to understand and implement user friendly design.</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-1-of-4">
-                        <div class="framed-img" id="about-me-2" value=4>
-                            <img src="assets/images/about-me/passion.jpg" alt="dream" class="framed-img__pic">
-                            <div class="framed-text framed-text--4">
-                                2000: Nerdy story about programming
+                        <div class="framed-img" id="about-me-4" value=4>
+                            <img src="assets/images/about-me/passion.jpg" alt="dream" class="framed-img__pic" id="framed-img-4">
+                            <div class="framed-img__text framed-text--4">
+                                <h4 class="framed-img__heading">2019-Today</h6>
+                                    <p>Even while working in education, I never stopped designing and coding. In 2019 I decided to follow my passion and change careers. Take a look at my portfolio to see what I've accomplished.</p>
+                                    <a href="#section-portfolio"> <button>View My Portfolio</button> </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
             <img src="assets/images/about-me/selfportrait.png" alt="MaiAda" class="selfportrait-img">
             <img src="assets/images/about-me/fam-couch.png" alt="My Family" class="family-img">
+            <div class="trapezoid"></div>
 
         </section>
 
@@ -112,7 +116,7 @@
                 Portfolio
             </div>
 
-            <div class="row">
+            <div class="row" id="portfolio-row-1">
                 <div class="col-1-of-3">
                     <a href="#wordguess-popup">
                         <div class="tarot-card">
@@ -160,7 +164,7 @@
             </div>
 
             <!-- 2ND ROW OF PORTFOLIO -->
-            <div class="row">
+            <div class="row" id="portfolio-row-2">
                 <div class="col-1-of-3">
                     <a href="#giphyapi-popup">
                         <div class="tarot-card">
@@ -209,7 +213,7 @@
 
 
             <!-- PORTFOLIO 3RD ROW -->
-            <div class="row">
+            <div class="row" id="portfolio-row-3">
                 <div class="col-1-of-3">
                     <a href="#datenight-popup">
                         <div class="tarot-card">
@@ -224,8 +228,27 @@
                         </div>
                     </a>
                 </div>
+        </section>
 
 
+        <section class="section-contact" id="section-contact">
+            <div class="heading-section u-center-text u-margin-bottom-medium">
+                Contact Me
+            </div>
+            <div class="contact-container">
+                <form action="action_page.php">
+                    <label for="fname">Your Name</label>
+                    <input type="text" id="form-name" name="name" placeholder="Your Name">
+
+                    <label for="lname">Your Email</label>
+                    <input type="text" id="form-email" name="email" placeholder="you@mail.com">
+
+                    <label for="subject">Your Message</label>
+                    <textarea id="form-message" name="message" placeholder="How can we work together?" style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
         </section>
     </main>
 
@@ -237,7 +260,7 @@
     <div class="popup" id="wordguess-popup">
         <div class="popup__content" id="portfolio-1">
             <div class="popup__links">
-                <a href="#section-portfolio"><button class="popup__btn popup__btn--exit">&times;</button></a>
+                <a href="#portfolio-row-1"><button class="popup__btn popup__btn--exit">&times;</button></a>
                 <a href="https://xemotionalx.github.io/wordguess/" target="_blank"><button
                         class="popup__btn popup__btn--link">Click to play!</button></a>
             </div>
@@ -258,7 +281,7 @@
     <div class="popup" id="rpg-popup">
         <div class="popup__content" id="portfolio-2">
             <div class="popup__links">
-                <a href="#section-portfolio"><button class="popup__btn popup__btn--exit">&times;</button></a>
+                <a href="#portfolio-row-1"><button class="popup__btn popup__btn--exit">&times;</button></a>
                 <a href="https://xemotionalx.github.io/rpg-game/" target="_blank"><button
                         class="popup__btn popup__btn--link">Click to play!</button></a>
             </div>
@@ -278,7 +301,7 @@
     <div class="popup" id="trivia-popup">
         <div class="popup__content" id="portfolio-3">
             <div class="popup__links">
-                <a href="#section-portfolio"><button class="popup__btn popup__btn--exit">&times;</button></a>
+                <a href="#portfolio-row-1"><button class="popup__btn popup__btn--exit">&times;</button></a>
                 <a href="https://xemotionalx.github.io/trivia-game/" target="_blank"><button
                         class="popup__btn popup__btn--link">Click to play!</button></a>
             </div>
@@ -298,7 +321,7 @@
     <div class="popup" id="giphyapi-popup">
         <div class="popup__content" id="portfolio-4">
             <div class="popup__links">
-                <a href="#section-portfolio"><button class="popup__btn popup__btn--exit">&times;</button></a>
+                <a href="#portfolio-row-2"><button class="popup__btn popup__btn--exit">&times;</button></a>
                 <a href="https://xemotionalx.github.io/giphy-api/" target="_blank"><button
                         class="popup__btn popup__btn--link">Click to view!</button></a>
             </div>
@@ -319,7 +342,7 @@
     <div class="popup" id="dreamseed-popup">
         <div class="popup__content" id="portfolio-5">
             <div class="popup__links">
-                <a href="#section-portfolio"><button class="popup__btn popup__btn--exit">&times;</button></a>
+                <a href="#portfolio-row-2"><button class="popup__btn popup__btn--exit">&times;</button></a>
                 <a href="https://xemotionalx.github.io/a-dream-seed" target="_blank"><button
                         class="popup__btn popup__btn--link">Click to view!</button></a>
             </div>
@@ -338,7 +361,7 @@
     <div class="popup" id="trains-popup">
         <div class="popup__content" id="portfolio-6">
             <div class="popup__links">
-                <a href="#section-portfolio"><button class="popup__btn popup__btn--exit">&times;</button></a>
+                <a href="#portfolio-row-2"><button class="popup__btn popup__btn--exit">&times;</button></a>
                 <a href="https://xemotionalx.github.io/a-dream-seed" target="_blank"><button
                         class="popup__btn popup__btn--link">Click to view!</button></a>
             </div>
@@ -359,8 +382,8 @@
     <div class="popup" id="datenight-popup">
         <div class="popup__content" id="portfolio-6">
             <div class="popup__links">
-                <a href="#section-portfolio"><button class="popup__btn popup__btn--exit">&times;</button></a>
-                <a href="https://xemotionalx.github.io/a-dream-seed" target="_blank"><button
+                <a href="#portfolio-row-3"><button class="popup__btn popup__btn--exit">&times;</button></a>
+                <a href="https://focuscode77.github.io/Project-1/index.html" target="_blank"><button
                         class="popup__btn popup__btn--link">Click to view!</button></a>
             </div>
 
@@ -375,6 +398,8 @@
             </div>
         </div>
     </div>
+
+
 
     <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
