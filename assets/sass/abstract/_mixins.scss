@@ -14,8 +14,20 @@
 }
 
 @mixin section-settings($bg-color) {
-    min-height: 110vh;
+    min-height: 150vh;
     background-color: $bg-color;
     padding-top: 10rem;
     position: relative;
+}
+
+// media query
+// 0 - 600px
+// 600 - 900
+// 900 - 1200
+// 1800 + 
+@mixin respond-phone {
+    @media (max-width: 600px) {
+        @content
+    }
+    ;
 }

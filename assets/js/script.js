@@ -47,10 +47,10 @@ function imgOnClick() {
         if (number === "2" || number === "4") {
             console.log(number);
             $(this).animate({
-                width: '148%',
-                position: 'absoulute',
                 top: '50%',
                 left: '-50%',
+                width: '148%',
+                position: 'absoulute',
             });
         } else {
             $(this).animate({

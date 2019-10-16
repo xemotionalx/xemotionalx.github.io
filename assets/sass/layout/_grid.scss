@@ -5,11 +5,6 @@
         margin-bottom: $gutter-vertical;
     }
     @include clearfix;
-    /*
-        // ^ = starts with 'col'
-        // * = contains 'col'
-        // $ = ends with col
-        */
     [class^="col-"] {
         float: left;
         &:not(:last-child) {
