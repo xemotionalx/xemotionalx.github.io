@@ -5,6 +5,8 @@ Breakpoint argument choices:
 -tab-port
 - tab-land
 -big-desktop
+
+ORDERL typography > general layout + grid > page layout > components
 */
 *,
 *::after,
@@ -15,18 +17,15 @@ Breakpoint argument choices:
 
 html {
   font-size: 62.5%; }
-  @media (max-width: 600px) {
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
     html {
       font-size: 50%; } }
-  @media (max-width: 900px) {
+  @media (min-width: 112.5em) {
     html {
-      font-size: 60%; } }
-  @media (max-width: 1200px) {
-    html {
-      font-size: 70%; } }
-  @media (min-width: 1800px) {
-    html {
-      font-size: 110%; } }
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
@@ -178,6 +177,9 @@ body {
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
+    @media (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-right: 6rem; } }
   .row::after {
     content: "";
     display: table;
@@ -186,6 +188,10 @@ body {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
+    @media (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important;
+        margin-right: 0; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
