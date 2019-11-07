@@ -1,34 +1,70 @@
-body {
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: 400;
-    font-size: $default-font-size;
-    // line-height: 1.5rem;
-    color: $color-grey-dark;
-}
-
-.heading-primary {
+.heading-home {
+    font-family: 'Fascinate Inline', cursive;
+    color: $color-secondary;
     display: block;
-    text-transform: uppercase;
-    letter-spacing: 1rem;
-    text-shadow: .2rem .3rem .3rem rgba($color-primary, .5);
-    font-family: 'Yeseva One', cursive;
+    text-align: center;
+    @include respond(phone) {
+        height: 65rem;
+    }
     &--main {
-        color: $color-black;
-        font-weight: 800;
-        font-size: 6rem;
+        font-size: 10rem;
+        line-height: 8rem;
+        @include respond(phone) {
+            font-size: 8rem;
+        }
     }
     &--sub {
-        color: $color-black;
-        font-size: 3rem;
-        font-weight: 700;
+        font-size: 7rem;
     }
 }
 
 .heading-section {
-    font-family: 'Yeseva One', cursive;
-    color: $color-secondary;
+    font-family: 'Fascinate Inline', cursive;
+    color: $color-primary-dark;
     font-weight: 800;
     font-size: 10rem;
     z-index: 10;
-    margin-top: 10rem;
+    margin: 10rem 0;
+    text-align: center;
+    @include respond(phone) {
+        font-size: 8rem;
+    }
+    &--sub {
+        font-size: 4rem;
+        color: #fff;
+        text-shadow: .2rem .2rem .3rem rgba(0, 0, 0, .3);
+    }
+}
+
+.framed-img {
+    &__text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        background-color: rgba($color-primary-dark, .8);
+        z-index: 99;
+        display: none;
+        padding: 3rem;
+        height: 50%;
+        border-radius: .5rem;
+    }
+    &__heading {
+        font-family: 'Mirza', cursive;
+        color: $color-white;
+        font-weight: 600;
+        font-size: 5rem;
+        margin-bottom: 1rem;
+    }
+    & p {
+        font-size: 2.5rem;
+        line-height: 3rem;
+        text-align: left;
+        font-family: 'Cabin Condensed', sans-serif;
+        @include respond(phone) {
+            font-size: 2.2rem;
+            line-height: 2.5rem;
+        }
+    }
 }

@@ -1,5 +1,7 @@
 .section-portfolio {
-    @include section-settings(#21005b);
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, $color-secondary, #04145b, #04145b);
+    padding-top: 10rem;
     padding-bottom: 20rem;
 }
 
@@ -10,6 +12,10 @@
     border-radius: .5rem;
     height: 50rem;
     position: relative;
+    &:hover {
+        transform: translateY(-.5rem);
+        cursor: pointer;
+    }
 }
 
 .tarot-border {
@@ -27,14 +33,17 @@
         justify-content: center;
         align-items: center;
     }
+    &:hover {
+        transform: translateY(-.5rem);
+        cursor: pointer;
+    }
 }
 
 .tarot-text {
     color: #04145b;
-    font-family: 'Yeseva One', cursive;
-    font-size: 2vw;
-    padding: 1rem;
-    background-color: $color-primary;
+    font-family: 'Mirza', cursive;
+    font-size: 3rem;
+    background-color: $color-secondary;
     border: .5rem solid $color-primary-dark;
     height: 6rem;
     display: flex;

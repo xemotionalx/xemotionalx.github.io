@@ -1,5 +1,7 @@
 .section-about {
-    @include section-settings($color-primary);
+    min-height: 120vh;
+    background-image: linear-gradient(to bottom, $color-primary, $color-secondary);
+    padding-top: 10rem;
     // padding-bottom: 10rem;
     &--intro {
         padding: 0 20rem;
@@ -26,12 +28,11 @@
 
 //Picture Frames
 .framed-img {
-    width: 100%;
     position: relative;
     padding: .5rem;
     text-align: center;
     &__pic {
-        width: 100%;
+        max-width: 95%;
         position: relative;
         border: solid 1rem $color-primary;
         border-bottom-color: $color-primary-dark;
@@ -39,30 +40,6 @@
         border-right-color: $color-primary-light;
         border-top-color: $color-primary-dark;
         box-shadow: 0 .3rem .4rem rgba(0, 0, 0, .3);
-    }
-    &__text {
-        position: absolute;
-        top: 10%;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 90%;
-        background-color: rgba($color-primary-dark, .8);
-        z-index: 99;
-        display: none;
-        padding: 1rem;
-        height: 50%;
-        border-radius: .5rem;
-    }
-    &__heading {
-        font-family: 'Yeseva One', cursive;
-        font-weight: 600;
-        font-size: 2rem;
-        margin-bottom: 1rem;
-    }
-    & p {
-        // font-size: 1.4rem;
-        line-height: 1.7rem;
-        text-align: left;
     }
     &:hover {
         transform: translateY(-.5rem);

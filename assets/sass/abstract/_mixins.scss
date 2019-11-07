@@ -16,10 +16,22 @@
 @mixin section-settings($bg-color) {
     min-height: 150vh;
     background-color: $bg-color;
-    padding-top: 10rem;
     position: relative;
 }
 
+@mixin flexCenter($text-align) {
+    justify-content: center;
+    align-items: center;
+    text-align: $text-align;
+    display: block;
+}
+
+// @mixin clearFlex {
+//     display: block;
+//     justify-content: none;
+//     align-items: none;
+//     text-align: none;
+// }
 // media query
 // 0 - 600px
 // 600 - 900
@@ -33,7 +45,7 @@ Breakpoint argument choices:
 - tab-land
 -big-desktop
 
-ORDERL typography > general layout + grid > page layout > components
+ORDER typography > general layout + grid > page layout > components
 */
 
 @mixin respond($breakpoint) {

@@ -6,7 +6,7 @@ Breakpoint argument choices:
 - tab-land
 -big-desktop
 
-ORDERL typography > general layout + grid > page layout > components
+ORDER typography > general layout + grid > page layout > components
 */
 *,
 *::after,
@@ -23,6 +23,9 @@ html {
   @media (max-width: 56.25em) {
     html {
       font-size: 50%; } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 43.75%; } }
   @media (min-width: 112.5em) {
     html {
       font-size: 75%; } }
@@ -30,34 +33,68 @@ html {
 body {
   box-sizing: border-box; }
 
-body {
-  font-family: 'Nunito Sans', sans-serif;
-  font-weight: 400;
-  font-size: 2rem;
-  color: #1b1b1b; }
-
-.heading-primary {
+.heading-home {
+  font-family: 'Fascinate Inline', cursive;
+  color: #e0bbe4;
   display: block;
-  text-transform: uppercase;
-  letter-spacing: 1rem;
-  text-shadow: 0.2rem 0.3rem 0.3rem rgba(244, 194, 194, 0.5);
-  font-family: 'Yeseva One', cursive; }
-  .heading-primary--main {
-    color: #000;
-    font-weight: 800;
-    font-size: 6rem; }
-  .heading-primary--sub {
-    color: #000;
-    font-size: 3rem;
-    font-weight: 700; }
+  text-align: center; }
+  @media (max-width: 37.5em) {
+    .heading-home {
+      height: 65rem; } }
+  .heading-home--main {
+    font-size: 10rem;
+    line-height: 8rem; }
+    @media (max-width: 37.5em) {
+      .heading-home--main {
+        font-size: 8rem; } }
+  .heading-home--sub {
+    font-size: 7rem; }
 
 .heading-section {
-  font-family: 'Yeseva One', cursive;
-  color: #fc766a;
+  font-family: 'Fascinate Inline', cursive;
+  color: #e2a8be;
   font-weight: 800;
   font-size: 10rem;
   z-index: 10;
-  margin-top: 10rem; }
+  margin: 10rem 0;
+  text-align: center; }
+  @media (max-width: 37.5em) {
+    .heading-section {
+      font-size: 8rem; } }
+  .heading-section--sub {
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.3); }
+
+.framed-img__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  background-color: rgba(226, 168, 190, 0.8);
+  z-index: 99;
+  display: none;
+  padding: 3rem;
+  height: 50%;
+  border-radius: .5rem; }
+
+.framed-img__heading {
+  font-family: 'Mirza', cursive;
+  color: #fff;
+  font-weight: 600;
+  font-size: 5rem;
+  margin-bottom: 1rem; }
+
+.framed-img p {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  text-align: left;
+  font-family: 'Cabin Condensed', sans-serif; }
+  @media (max-width: 37.5em) {
+    .framed-img p {
+      font-size: 2.2rem;
+      line-height: 2.5rem; } }
 
 .u-center-text {
   text-align: center !important; }
@@ -69,30 +106,54 @@ body {
   margin-bottom: 4rem !important; }
 
 .u-margin-bottom-big {
-  margin-bottom: 10rem !important; }
+  margin-bottom: 6rem !important; }
+
+.full-width {
+  padding-left: 0;
+  padding-right: 0; }
+
+.full-width .row {
+  margin-right: 0;
+  margin-left: 0; }
+
+.full-width .col-md-12 {
+  padding-left: 0;
+  padding-right: 0; }
+
+.btn--default {
+  padding: .5rem;
+  background: linear-gradient(to right, #e0bbe4, #ECC7F0);
+  color: #ffe5dc;
+  font-family: 'Sniglet', cursive;
+  font-size: 3rem;
+  font-weight: normal;
+  padding: 0 1rem;
+  outline: none; }
+  .btn--default:focus {
+    outline: 0; }
 
 .btn--circle {
-  color: #000;
-  background-color: #feaea5;
-  border: 5px solid #000;
+  color: #e0bbe4;
+  background-color: transparent;
+  border: 5px solid #e0bbe4;
   border-radius: 50%;
   margin: 20px;
   padding: 10px; }
 
 .btn__icon {
-  color: #000;
+  color: #e0bbe4;
   font-size: 4rem;
-  background-color: #feaea5; }
+  background-color: transparent; }
 
 .portfolio-card__img {
   width: 60%; }
   .portfolio-card__img:hover {
-    border: 5px solid #feaea5; }
+    border: 5px solid #e2a8be; }
 
 .popup {
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(to bottom left, rgba(254, 174, 165, 0.8), rgba(255, 209, 195, 0.8));
+  background-image: linear-gradient(to bottom left, rgba(226, 168, 190, 0.8), rgba(255, 209, 195, 0.8));
   position: fixed;
   top: 0;
   left: 0;
@@ -119,12 +180,12 @@ body {
       font-size: 2.3rem;
       border: transparent; }
       .popup__btn--exit:hover {
-        color: #feaea5; }
+        color: #e2a8be; }
     .popup__btn--link {
       float: right;
       margin: .5rem;
-      background-image: linear-gradient(to bottom left, #feaea5, #ffd1c3);
-      border-color: #feaea5; }
+      background-image: linear-gradient(to bottom left, #e2a8be, #ffd1c3);
+      border-color: #e2a8be; }
   .popup__content {
     position: absolute;
     top: 50%;
@@ -140,7 +201,7 @@ body {
     display: block;
     margin-left: 1rem;
     font-size: 3rem;
-    background-image: linear-gradient(to right, #fc766a, #feaea5);
+    background-image: linear-gradient(to right, #e0bbe4, #e2a8be);
     -webkit-background-clip: text;
     color: transparent;
     box-shadow: 0 0.2 0.4 rgba(0, 0, 0, 0.5); }
@@ -148,62 +209,10 @@ body {
     padding: 0 1.5rem 2rem 1.5rem;
     font-size: 1.5rem; }
 
-.trapezoid {
-  border-bottom: 20rem solid #fc766a;
-  border-left: 5rem solid transparent;
-  border-right: 5rem solid transparent;
-  height: 0;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 50; }
-
-.wallpaper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-image: url(../images/about-me/pink-wallpaper.jpg);
-  background-repeat: repeat;
-  width: calc(100% - 10rem);
-  height: 100vh;
-  padding: 5rem 0 10rem 0;
-  z-index: 2; }
-
-.row {
-  max-width: 114rem;
-  margin: 0 auto; }
-  .row:not(:last-child) {
-    margin-bottom: 8rem; }
-    @media (max-width: 56.25em) {
-      .row:not(:last-child) {
-        margin-right: 6rem; } }
-  .row::after {
-    content: "";
-    display: table;
-    clear: both; }
-  .row [class^="col-"] {
-    float: left; }
-    .row [class^="col-"]:not(:last-child) {
-      margin-right: 6rem; }
-    @media (max-width: 56.25em) {
-      .row [class^="col-"] {
-        width: 100% !important;
-        margin-right: 0; } }
-  .row .col-1-of-2 {
-    width: calc((100% - 6rem) / 2); }
-  .row .col-1-of-3 {
-    width: calc((100% - (6rem * 2)) / 3); }
-  .row .col-2-of-3 {
-    width: calc((2 * (100% - (6rem * 2)) / 3) + 6rem); }
-  .row .col-1-of-4 {
-    width: calc((100% - (6rem * 3)) / 4); }
-  .row .col-2-of-4 {
-    width: calc(2 * ((100% - (6rem * 3)) / 4) + 6rem); }
-  .row .col-3-of-4 {
-    width: calc(3 * ((100% - (6rem * 3)) / 4) + (2 * 6rem)); }
+@media (max-width: 37.5em) {
+  .container-fluid {
+    padding: 0;
+    margin: 0; } }
 
 .navbar {
   width: 100%;
@@ -221,7 +230,7 @@ body {
     color: #ffd1c3;
     text-transform: uppercase; }
   .navbar a:hover {
-    color: #feaea5; }
+    color: #e2a8be; }
 
 .content {
   padding: 16px; }
@@ -235,10 +244,9 @@ body {
   padding-top: 60px; }
 
 .section-about {
-  min-height: 150vh;
-  background-color: #f4c2c2;
-  padding-top: 10rem;
-  position: relative; }
+  min-height: 120vh;
+  background-image: linear-gradient(to bottom, #ffe5dc, #e0bbe4);
+  padding-top: 10rem; }
   .section-about--intro {
     padding: 0 20rem; }
 
@@ -259,39 +267,18 @@ body {
   z-index: 998; }
 
 .framed-img {
-  width: 100%;
   position: relative;
   padding: .5rem;
   text-align: center; }
   .framed-img__pic {
-    width: 100%;
+    max-width: 95%;
     position: relative;
-    border: solid 1rem #f4c2c2;
-    border-bottom-color: #feaea5;
+    border: solid 1rem #ffe5dc;
+    border-bottom-color: #e2a8be;
     border-left-color: #ffd1c3;
     border-right-color: #ffd1c3;
-    border-top-color: #feaea5;
+    border-top-color: #e2a8be;
     box-shadow: 0 0.3rem 0.4rem rgba(0, 0, 0, 0.3); }
-  .framed-img__text {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    background-color: rgba(254, 174, 165, 0.8);
-    z-index: 99;
-    display: none;
-    padding: 1rem;
-    height: 50%;
-    border-radius: .5rem; }
-  .framed-img__heading {
-    font-family: 'Yeseva One', cursive;
-    font-weight: 600;
-    font-size: 2rem;
-    margin-bottom: 1rem; }
-  .framed-img p {
-    line-height: 1.7rem;
-    text-align: left; }
   .framed-img:hover {
     transform: translateY(-0.5rem);
     cursor: pointer; }
@@ -300,10 +287,8 @@ body {
   filter: grayscale(100%) blur(1px); }
 
 .section-contact {
-  min-height: 150vh;
-  background-color: #f4c2c2;
-  padding-top: 10rem;
-  position: relative; }
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, #04145b, #ffe5dc, #ffe5dc, #ffe5dc); }
 
 .contact-container {
   width: 80%;
@@ -313,25 +298,27 @@ body {
 input[type=text],
 select,
 textarea {
+  background-color: #e0bbe4;
+  color: #bd8cbf;
   width: 100%;
   /* Full width */
-  padding: 12px;
+  padding: 1.2rem;
   /* Some padding */
-  border: 1px solid #ccc;
+  border: 1px solid #ffe5dc;
   /* Gray border */
-  border-radius: 4px;
+  border-radius: .4rem;
   /* Rounded borders */
   box-sizing: border-box;
   /* Make sure that padding and width stays in place */
-  margin-top: 6px;
+  margin-top: .6rem;
   /* Add a top margin */
-  margin-bottom: 16px;
+  margin-bottom: 1.6rem;
   /* Bottom margin */
   resize: vertical; }
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-  background-color: #fc766a;
+  background-color: #e0bbe4;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -340,52 +327,70 @@ input[type=submit] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-  background-color: #fc766a; }
+  background-color: #e0bbe4; }
 
 /* Add a background color and some padding around the form */
 .contact-container {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #ffe5dc;
   padding: 20px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-size: 2rem;
+  color: #bd8cbf;
+  font-family: 'Cabin-Condensed', sans-serif; }
 
 .section-home {
   height: 100vh;
-  background-color: #ffd1c3;
-  background-image: url(../images/home/background_home-1.jpg);
-  background-size: cover;
-  background-position: top right;
-  background-attachment: fixed; }
-  .section-home__text-box {
-    height: 100vh;
-    display: flex;
-    justify-content: left;
-    align-items: center; }
-  .section-home__heading-primary {
-    text-align: center;
-    padding: 10rem; }
+  background-color: #ffe5dc; }
+  @media (max-width: 37.5em) {
+    .section-home {
+      padding: 0 1rem 0 0;
+      height: 200rem; } }
+
+.home-box {
+  display: block;
+  background-color: #e0bbe4;
+  height: 50%;
+  width: 90%;
+  position: relative; }
+  @media (max-width: 37.5em) {
+    .home-box {
+      height: 50rem; } }
+
+.home-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  max-height: 70vh; }
+  @media (max-width: 56.25em) {
+    .home-img {
+      height: 100%; } }
 
 .section-portfolio {
-  min-height: 150vh;
-  background-color: #21005b;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, #e0bbe4, #04145b, #04145b);
   padding-top: 10rem;
-  position: relative;
   padding-bottom: 20rem; }
 
 .tarot-card {
   background-image: linear-gradient(to bottom, #04145b, #21005b);
   box-shadow: 0.3rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
-  border: 1rem solid #feaea5;
+  border: 1rem solid #e2a8be;
   border-radius: .5rem;
   height: 50rem;
   position: relative; }
+  .tarot-card:hover {
+    transform: translateY(-0.5rem);
+    cursor: pointer; }
 
 .tarot-border {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 0.5rem solid #feaea5;
+  border: 0.5rem solid #e2a8be;
   height: 46rem;
   width: 95%; }
 
@@ -396,14 +401,16 @@ input[type=submit]:hover {
     display: flex;
     justify-content: center;
     align-items: center; }
+  .tarot-img:hover {
+    transform: translateY(-0.5rem);
+    cursor: pointer; }
 
 .tarot-text {
   color: #04145b;
-  font-family: 'Yeseva One', cursive;
-  font-size: 2vw;
-  padding: 1rem;
-  background-color: #f4c2c2;
-  border: 0.5rem solid #feaea5;
+  font-family: 'Mirza', cursive;
+  font-size: 3rem;
+  background-color: #e0bbe4;
+  border: 0.5rem solid #e2a8be;
   height: 6rem;
   display: flex;
   justify-content: center;
