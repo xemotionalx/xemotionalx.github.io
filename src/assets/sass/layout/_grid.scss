@@ -1,0 +1,6 @@
+.container-fluid {
+    @include respond(phone) {
+        padding: 0;
+        margin: 0;
+    }
+}

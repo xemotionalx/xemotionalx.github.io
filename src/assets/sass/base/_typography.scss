@@ -1,0 +1,77 @@
+.heading-home {
+    font-family: 'Fascinate Inline', cursive;
+    color: $color-secondary;
+    display: block;
+    text-align: center;
+    @include respond(phone) {
+        height: 65rem;
+    }
+    &--main {
+        font-size: 10rem;
+        line-height: 8rem;
+        @include respond(phone) {
+            font-size: 8rem;
+        }
+    }
+    &--sub {
+        font-size: 7rem;
+    }
+}
+
+.heading-section {
+    font-family: 'Fascinate Inline', cursive;
+    color: $color-primary-dark;
+    font-weight: 800;
+    font-size: 10rem;
+    z-index: 10;
+    margin: 10rem 0;
+    text-align: center;
+    @include respond(phone) {
+        font-size: 8rem;
+    }
+    &--sub {
+        font-size: 4rem;
+        color: #fff;
+        text-shadow: .2rem .2rem .3rem rgba(0, 0, 0, .3);
+    }
+}
+
+.framed-img {
+    &__text {
+        position: relative;
+        width: 90%;
+        background-color: rgba($color-primary, .5);
+        box-shadow: .2rem .2rem 1rem rgba(0, 0, 0, .1);
+        padding: 5rem 3rem 3rem 3rem;
+        height: 30rem;
+        border-radius: .5rem;
+        margin: 0 auto;
+        & p {
+            color: $color-secondary-dark;
+            font-size: 1.8rem;
+            line-height: 2rem;
+            text-align: left;
+            font-family: sans-serif;
+            height: 75%;
+            @include respond(tab-land) {
+                font-size: 1.6rem;
+                line-height: 1.5rem;
+            }
+            @include respond(tab-port) {
+                font-size: 2rem;
+                line-height: 2.2rem;
+            }
+            @include respond(phone) {
+                font-size: 2.5rem;
+                line-height: 2.7rem;
+            }
+        }
+    }
+    &__heading {
+        font-family: 'Mirza', cursive;
+        color: $color-white;
+        font-weight: 600;
+        font-size: 5rem;
+        margin-bottom: 1rem;
+    }
+}

@@ -1,0 +1,58 @@
+    .section-contact {
+        min-height: 100vh;
+        background-image: linear-gradient(to bottom, #04145b, $color-primary, $color-primary, $color-primary);
+    }
+    
+    .contact-container {
+        width: 80%;
+        text-align: center;
+    }
+    /* Style inputs with type="text", select elements and textareas */
+    
+    input[type=text],
+    select,
+    textarea {
+        background-color: $color-secondary;
+        color: $color-secondary-dark;
+        width: 100%;
+        /* Full width */
+        padding: 1.2rem;
+        /* Some padding */
+        border: 1px solid $color-primary;
+        /* Gray border */
+        border-radius: .4rem;
+        /* Rounded borders */
+        box-sizing: border-box;
+        /* Make sure that padding and width stays in place */
+        margin-top: .6rem;
+        /* Add a top margin */
+        margin-bottom: 1.6rem;
+        /* Bottom margin */
+        resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
+    }
+    /* Style the submit button with a specific background color etc */
+    
+    input[type=submit] {
+        background-color: $color-secondary;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    /* When moving the mouse over the submit button, add a darker green color */
+    
+    input[type=submit]:hover {
+        background-color: $color-secondary;
+    }
+    /* Add a background color and some padding around the form */
+    
+    .contact-container {
+        border-radius: 5px;
+        background-color: $color-primary;
+        padding: 20px;
+        margin: 0 auto;
+        font-size: 2rem;
+        color: $color-secondary-dark;
+        font-family: 'Cabin-Condensed', sans-serif;
+    }
