@@ -1,12 +1,13 @@
 import React from 'react';
-import Splash from './components/sections/Splash';
+import "bootstrap/dist/css/bootstrap.min.css";
 import './App.css';
+import Splash from './components/sections/Splash';
 
 function App() {
   return (
-    <div>
+    <div className="container">
       <Splash />
-      hello, welcome to my portfolio
+      
     </div>
   );
 }
