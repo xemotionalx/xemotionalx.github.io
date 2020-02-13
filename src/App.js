@@ -10,7 +10,7 @@ import Popup from "./components/Popup";
 
 function App() {
   return (
-    <Router>
+    <Router basename={`${process.env.PUBLIC_URL}/`}>
       <Switch>
       <main>
         <Splash />
