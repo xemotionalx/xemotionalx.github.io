@@ -16,7 +16,7 @@ function Splash() {
             </h1>
 
             <div className="mb-5 u-center-text">
-              <a href="#!">
+              <a href="#section-portfolio">
                 <button className="btn--default rounded mr-5">Portfolio</button>
               </a>
               <a href={ResumePDF}>

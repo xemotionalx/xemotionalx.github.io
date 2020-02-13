@@ -168,12 +168,12 @@ body {
   top: 0;
   left: 0;
   z-index: 999;
-  opacity: 0;
-  visibility: hidden;
-  transition: all .5s; }
-  .popup:target {
-    opacity: 1;
-    visibility: visible; }
+  transition: all .5s;
+  opacity: 1;
+  visibility: visible; }
+  .popup__hidden {
+    opacity: 0;
+    visibility: hidden; }
   .popup__btn {
     color: crimson;
     font-weight: 700;
