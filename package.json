@@ -1,5 +1,6 @@
 {
   "name": "xemotionalx.github.io",
+  "homepage": "http://xemotionalx.github.io/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -23,6 +24,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "compile:sass": "node-sass src/assets/sass/main.scss src/App.css -w"
   },
   "eslintConfig": {
@@ -39,5 +42,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }
