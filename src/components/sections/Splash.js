@@ -19,12 +19,16 @@ function Splash() {
               <a href="#section-portfolio">
                 <button className="btn--default rounded mr-5">Portfolio</button>
               </a>
-              <a href={ResumePDF}>
+              <a href={ResumePDF} target="_blank" rel="noopener noreferrer">
                 <button className="btn--default rounded">Resume</button>
               </a>
             </div>
             <button className="btn btn--circle btn-icon">
-              <a href="#section-contact">
+              <a
+                href="mailto:maiadacx@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="far fa-envelope btn__icon"></i>
               </a>
             </button>
