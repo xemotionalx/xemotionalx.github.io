@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/static/css/main.226326a2.chunk.css",
+    "main.js": "/static/js/main.7db2884a.chunk.js",
+    "main.js.map": "/static/js/main.7db2884a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d87c0e5b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d87c0e5b.js.map",
+    "static/css/2.47e06e2e.chunk.css": "/static/css/2.47e06e2e.chunk.css",
+    "static/js/2.d09b558a.chunk.js": "/static/js/2.d09b558a.chunk.js",
+    "static/js/2.d09b558a.chunk.js.map": "/static/js/2.d09b558a.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.d7215018eebaf5b72e91c53e5a5dda46.js": "/precache-manifest.d7215018eebaf5b72e91c53e5a5dda46.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.47e06e2e.chunk.css.map": "/static/css/2.47e06e2e.chunk.css.map",
+    "static/css/main.226326a2.chunk.css.map": "/static/css/main.226326a2.chunk.css.map",
+    "static/js/2.d09b558a.chunk.js.LICENSE.txt": "/static/js/2.d09b558a.chunk.js.LICENSE.txt",
+    "static/media/MaiAda-Carpano-Resume.pdf": "/static/media/MaiAda-Carpano-Resume.1431a2e2.pdf",
+    "static/media/bestreads.png": "/static/media/bestreads.e4538aa6.png",
+    "static/media/datenight.png": "/static/media/datenight.53d18a1e.png",
+    "static/media/pairigy.png": "/static/media/pairigy.161af807.png",
+    "static/media/portfolio-icon-1.png": "/static/media/portfolio-icon-1.c0be0dc5.png",
+    "static/media/portfolio-icon-10.png": "/static/media/portfolio-icon-10.cef3b21e.png",
+    "static/media/portfolio-icon-11.png": "/static/media/portfolio-icon-11.afc69fd3.png",
+    "static/media/portfolio-icon-2.png": "/static/media/portfolio-icon-2.e36cdd16.png",
+    "static/media/portfolio-icon-3.png": "/static/media/portfolio-icon-3.fe1dea5d.png",
+    "static/media/portfolio-icon-4.png": "/static/media/portfolio-icon-4.0ea598b2.png",
+    "static/media/portfolio-icon-5.png": "/static/media/portfolio-icon-5.d0f5e292.png",
+    "static/media/portfolio-icon-6.png": "/static/media/portfolio-icon-6.54937eaf.png",
+    "static/media/portfolio-icon-7.png": "/static/media/portfolio-icon-7.95035a4d.png",
+    "static/media/portfolio-screenie-bestreads.png": "/static/media/portfolio-screenie-bestreads.a121a751.png",
+    "static/media/portfolio-screenie-datenight.png": "/static/media/portfolio-screenie-datenight.58854299.png",
+    "static/media/portfolio-screenie-pairigy.png": "/static/media/portfolio-screenie-pairigy.e2198b7e.png",
+    "static/media/selfportrait.png": "/static/media/selfportrait.b2722fa6.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d87c0e5b.js",
+    "static/css/2.47e06e2e.chunk.css",
+    "static/js/2.d09b558a.chunk.js",
+    "static/css/main.226326a2.chunk.css",
+    "static/js/main.7db2884a.chunk.js"
+  ]
+}
