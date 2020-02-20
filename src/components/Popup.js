@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import portfolio from "../json/portfolio.json";
+//import portfolio from "../json/portfolio.json";
 
 function Portfolio({ location, match }) {
   const { state = {} } = location;

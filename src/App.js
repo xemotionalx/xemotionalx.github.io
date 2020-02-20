@@ -14,7 +14,7 @@ function App() {
       <Switch>
       <main>
         <Splash />
-        <Portfolio />
+        {/* <Portfolio /> */}
 
         <Route path="/popup/:project" component={Popup} />
       </main>
