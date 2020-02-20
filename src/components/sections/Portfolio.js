@@ -16,7 +16,7 @@ function Portfolio() {
         {portfolio.map(project => (
           <Col lg xs={6} key={project.id}>
             <Link to={{
-                pathname: `/popup/${project.id}`,
+                pathname: `popup/${project.id}`,
                 state: { modal: true }
             }}>
               <div className="tarot-card">

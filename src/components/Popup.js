@@ -7,6 +7,8 @@ function Portfolio({ location, match }) {
   const { modal } = state;
   const num = parseInt(match.params.project);
 
+  console.log(location);
+
   return (
     <div className={modal ? "popup" : "popup__hidden"}>
       <div className="popup__content">
@@ -41,7 +43,7 @@ function Portfolio({ location, match }) {
           className="img-fluid"
         />
 
-        <div class="popup__text">
+        <div className="popup__text">
           {portfolio[num].description}
         </div>
       </div>
