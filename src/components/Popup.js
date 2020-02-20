@@ -4,10 +4,8 @@ import portfolio from "../json/portfolio.json";
 
 function Portfolio({ location, match }) {
   const { state = {} } = location;
-  const { modal } = state;
+  const { modal, portfolio } = state;
   const num = parseInt(match.params.project);
-
-  console.log(portfolio);
 
   return (
     <div className={modal ? "popup" : "popup__hidden"}>

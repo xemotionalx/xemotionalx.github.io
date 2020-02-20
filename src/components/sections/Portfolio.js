@@ -17,7 +17,7 @@ function Portfolio() {
           <Col lg xs={6} key={project.id}>
             <Link to={{
                 pathname: `popup/${project.id}`,
-                state: { modal: true }
+                state: { modal: true, portfolio: portfolio }
             }}>
               <div className="tarot-card">
                 <div className="tarot-border">
