@@ -7,7 +7,7 @@ function Portfolio({ location, match }) {
   const { modal } = state;
   const num = parseInt(match.params.project);
 
-  console.log(location);
+  console.log(portfolio);
 
   return (
     <div className={modal ? "popup" : "popup__hidden"}>
