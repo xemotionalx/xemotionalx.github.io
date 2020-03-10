@@ -2,6 +2,8 @@ import React from "react";
 import ResumePDF from "../../assets/images/MaiAda-Carpano-Resume.pdf";
 import SelfPortraitImg from "../../assets/images/about-me/selfportrait.png";
 
+
+
 function Splash() {
   return (
     <section className="section-home full-width">
