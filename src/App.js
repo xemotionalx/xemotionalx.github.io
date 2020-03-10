@@ -1,25 +1,41 @@
-import React from "react";
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import React, { useState } from "react";
 // CSS
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 // COMPONENTS
 import Splash from "./components/sections/Splash";
 import Portfolio from "./components/sections/Portfolio";
-import Popup from "./components/Popup";
+
+//REACT ANIMATION
+import { CSSTransition } from "react-transition-group";
 
 function App() {
+  const [showSplash, setShowSplash] = useState(true);
+  const [showPortfolio, setShowPortfolio] = useState(false);
   return (
-    <Router basename={`${process.env.PUBLIC_URL}/`}>
-      <Switch>
-      <main>
+    <main>
+      <CSSTransition
+        in={showSplash}
+        appear={true}
+        unmountOnExit
+        timeout={300}
+        classNames="fade"
+      >
         <Splash />
-        {/* <Portfolio /> */}
+      </CSSTransition>
 
-        <Route path="/popup/:project" component={Popup} />
-      </main>
-      </Switch>
-    </Router>
+      <CSSTransition
+        in={showPortfolio}
+        appear={false}
+        unmountOnExit
+        timeout={300}
+        classNames="fade"
+        onEnter={() => setShowSplash(false)}
+        onExited={() => setShowSplash(true)}
+      >
+        <Portfolio {...showPortfolio} />
+      </CSSTransition>
+    </main>
   );
 }
 

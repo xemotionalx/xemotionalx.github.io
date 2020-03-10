@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Col, Row } from "react-bootstrap";
-import { Link } from 'react-router-dom';
 import portfolio from "../../json/portfolio.json";
 
+function Portfolio(props) {
+  const [showPortfolio, setShowPortfolio] = useState(props);
 
-function Portfolio() {
+  useEffect(() => {
+    setShowPortfolio(props);
+   
+  }, [props]);
+
   return (
     <section className="section-portfolio full-width">
       <Row>
@@ -14,11 +19,7 @@ function Portfolio() {
       </Row>
       <Row>
         {portfolio.map(project => (
-          <Col lg xs={6} key={project.id}>
-            <Link to={{
-                pathname: `popup/${project.id}`,
-                state: { modal: true, portfolio: portfolio }
-            }}>
+          <Col lg xs={6} key={project.id}>  
               <div className="tarot-card">
                 <div className="tarot-border">
                   <div className="tarot-img--container">
@@ -30,11 +31,11 @@ function Portfolio() {
                   </div>
                   <div className="tarot-text">{project.name}</div>
                 </div>
-              </div>
-            </Link>
+              </div>    
           </Col>
         ))}
       </Row>
+      
     </section>
   );
 }
