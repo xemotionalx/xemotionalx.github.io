@@ -1,18 +1,20 @@
 .navbar {
   height: 8rem;
   width: 90%;
+  margin: 0 auto;
+
   &__logobox {
     font-family: 'Pacifico', cursive;
     font-size: 2.3rem;
-    margin-left: 5rem;
-    padding: 0 1.6rem;
     @include gradientText($color-secondary, $color-primary-2, bottom left);
   }
    
     a:link {
       font-family: 'Noto Sans', sans-serif;
-      padding: 0 1.6rem;
-      margin-right: 2rem;
+      margin-right: 7.5rem;
+    //   &:not(:last-child) {
+    //     margin-right: 7.5rem;
+    // }
       font-size: 1.6rem;
       text-decoration: none;
       //text-shadow: .2rem .3rem .4rem rgba(0, 0, 0, .4);

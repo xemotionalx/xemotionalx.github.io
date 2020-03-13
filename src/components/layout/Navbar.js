@@ -4,18 +4,19 @@ import ResumePDF from "../../assets/images/MaiAda-Carpano-Resume.pdf";
 function Navbar() {
   return (
     <nav className="navbar sticky-top">
+      <div class="container">
       <div className="navbar__logobox navbar-brand">
           emotional unicorn
     </div>
 
-    <div class="">
-      <a class="" href="!#">Portfolio</a>
-      <a class="" href="!#">Resume</a>
-      <a class="" href="!#">Home</a>
-     
+    <div>
+      <a href="!#">Portfolio</a>
+      <a href="!#">Resume</a>
+      <a href="!#">Home</a>  
     </div>
-
+    </div>
     </nav>
+    
   );
 }
 
