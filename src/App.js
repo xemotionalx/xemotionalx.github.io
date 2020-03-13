@@ -5,18 +5,16 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 // COMPONENTS
 import Splash from "./components/sections/Splash";
-import Portfolio from "./components/sections/Portfolio";
-import Popup from "./components/Popup";
+import Navbar from "./components/layout/Navbar";
 
 function App() {
   return (
     <Router basename={`${process.env.PUBLIC_URL}/`}>
       <Switch>
       <main>
+        <Navbar />
         <Splash />
-        {/* <Portfolio /> */}
 
-        <Route path="/popup/:project" component={Popup} />
       </main>
       </Switch>
     </Router>

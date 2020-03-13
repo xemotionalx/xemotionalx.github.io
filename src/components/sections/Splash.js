@@ -1,63 +1,52 @@
 import React from "react";
-import ResumePDF from "../../assets/images/MaiAda-Carpano-Resume.pdf";
 import SelfPortraitImg from "../../assets/images/about-me/selfportrait.png";
-
-
 
 function Splash() {
   return (
     <section className="section-home full-width">
       <div className="row vh-100">
-        <div className="col-lg-7 col-md-7 col-sm-11 d-flex justify-content-center align-items-center">
-          <div className="heading-home align-self-center">
-            <h1 className="heading-home--main u-margin-bottom-big">
+        <div className="col-lg-12 d-flex align-items-center justify-content-center">
+          <div className="home-heading heading-home">
+            <h1 className="heading-home heading-home--main u-margin-bottom-medium">
               MaiAda Carpano
             </h1>
-            <h1 className="heading-home--sub  u-margin-bottom-medium">
-              Web Developer
+            <h1 className="heading-home heading-home--sub u-margin-bottom-small">
+              Full Stack Web Developer
             </h1>
 
-            <div className="mb-5 u-center-text">
-              {/* <a href="#section-portfolio">
-                <button className="btn--default rounded mr-5">Portfolio</button>
-              </a> */}
-              <a href={ResumePDF} target="_blank" rel="noopener noreferrer">
-                <button className="btn--default rounded">Resume</button>
-              </a>
-            </div>
-            <button className="btn btn--circle btn-icon">
+            <button className="btn btn__icon--gradient mr-2">
               <a
                 href="mailto:maiadacx@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="far fa-envelope btn__icon"></i>
+                <i className="fas fa-envelope btn__icon--gradient"></i>
               </a>
             </button>
 
-            <button className="btn btn--circle btn-icon">
+            <button className="btn btn__icon--gradient mr-2">
               <a
                 href="https://github.com/xemotionalx"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fab fa-github-alt btn__icon"></i>
+                <i className="fab fa-github-square btn__icon--gradient"></i>
               </a>
             </button>
 
-            <button className="btn btn--circle btn-icon">
+            <button className="btn btn__icon--gradient">
               <a
                 href="https://www.linkedin.com/in/maiadac/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fab fa-linkedin-in btn__icon"></i>
+                <i className="fab fa-linkedin btn__icon--gradient"></i>
               </a>
             </button>
           </div>
-        </div>
-        <div className="col-lg-4 col-md-4 col-sm-11  d-flex justify-content-center align-items-center">
-          <div className="home-box align-self-center">
+
+
+          <div className="home-box">
             <a href="#section-about">
               <img
                 src={SelfPortraitImg}
@@ -66,6 +55,8 @@ function Splash() {
               />
             </a>
           </div>
+    
+
         </div>
       </div>
     </section>

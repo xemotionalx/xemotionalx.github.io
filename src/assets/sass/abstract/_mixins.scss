@@ -26,6 +26,13 @@
     display: block;
 }
 
+@mixin gradientText($color-1, $color-2, $text-direction) {
+    background-image: linear-gradient(to $text-direction,
+    $color-1, $color-2 70%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
 // @mixin clearFlex {
 //     display: block;
 //     justify-content: none;
