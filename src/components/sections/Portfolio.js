@@ -7,14 +7,12 @@ import portfolio from "../../json/portfolio.json";
 function Portfolio() {
   return (
     <section className="section-portfolio full-width">
-      <Row>
-        <div className="col-12 d-flex justify-content-center align-items-center" id="section-portfolio">
-          <h1 className="heading-section">Portfolio</h1>
-        </div>
-      </Row>
-      <Row>
+      <div className="container">
+      <Row className="d-flex align-items-center justify-content-center vh-100">
+      
+      
         {portfolio.map(project => (
-          <Col lg xs={6} key={project.id}>
+          <Col lg={4} xs={6} key={project.id}>
             <Link to={{
                 pathname: `popup/${project.id}`,
                 state: { modal: true, portfolio: portfolio }
@@ -34,7 +32,10 @@ function Portfolio() {
             </Link>
           </Col>
         ))}
+        
       </Row>
+      </div>
+      
     </section>
   );
 }

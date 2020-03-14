@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 // COMPONENTS
 import Splash from "./components/sections/Splash";
+import Portfolio from "./components/sections/Portfolio";
 import Navbar from "./components/layout/Navbar";
 
 function App() {
@@ -13,7 +14,9 @@ function App() {
       <Switch>
       <main>
         <Navbar />
-        <Splash />
+        
+        <Route exact path="/" component={Splash} />
+        <Route exact path="/portfolio" component={Portfolio} />
 
       </main>
       </Switch>

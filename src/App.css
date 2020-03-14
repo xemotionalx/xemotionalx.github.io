@@ -34,7 +34,7 @@ body {
   box-sizing: border-box; }
 
 .heading-home {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-weight: bold;
   display: block;
   text-align: right; }
@@ -303,8 +303,7 @@ input[type=submit]:hover {
   @media (max-width: 37.5em) {
     .section-home {
       padding: 0 1rem 0 0;
-      height: 200rem;
-      flex-wrap: wrap; } }
+      height: 200rem; } }
 
 .home-box {
   display: inline-block;
@@ -328,16 +327,21 @@ input[type=submit]:hover {
 
 .section-portfolio {
   min-height: 100vh;
-  background-image: linear-gradient(to bottom, #FFCCE5, #F8439D, #F8439D);
-  padding-top: 10rem;
-  padding-bottom: 20rem; }
+  margin-top: -8rem;
+  background-color: #262425;
+  align-items: center;
+  justify-content: center; }
+  @media (max-width: 37.5em) {
+    .section-portfolio {
+      padding: 0 1rem 0 0;
+      height: 200rem; } }
 
 .tarot-card {
-  background-image: linear-gradient(to bottom, #04145b, #21005b);
-  box-shadow: 0.3rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
-  border: 1rem solid #F8439D;
+  background-image: linear-gradient(to bottom left, #ABFCCD, #FFCCE5 70%);
+  border: 1rem solid #262425;
   border-radius: .5rem;
-  height: 50rem;
+  width: 30rem;
+  height: 40rem;
   position: relative; }
   .tarot-card:hover {
     transform: translateY(-0.5rem);
@@ -348,14 +352,15 @@ input[type=submit]:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 0.5rem solid #F8439D;
-  height: 46rem;
-  width: 95%; }
+  border: 0.5rem solid #262425;
+  height: 95%;
+  width: 95%;
+  text-align: center; }
 
 .tarot-img {
   max-width: 95%; }
   .tarot-img--container {
-    height: 40rem;
+    height: 84%;
     display: flex;
     justify-content: center;
     align-items: center; }
@@ -364,12 +369,15 @@ input[type=submit]:hover {
     cursor: pointer; }
 
 .tarot-text {
-  color: #04145b;
-  font-family: 'Mirza', cursive;
+  color: #262425;
+  font-family: "Noto Sans", sans-serif;
   font-size: 3rem;
-  background-color: #ABFCCD;
-  border: 0.5rem solid #F8439D;
-  height: 6rem;
+  font-weight: 600;
+  background-color: transparent;
+  border-top: 0.5rem solid #262425;
+  height: 17%;
+  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin: 0 auto; }
