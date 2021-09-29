@@ -36,16 +36,19 @@ li:not(:last-child) {
 a {
     text-decoration: none;
     padding-bottom: .5rem;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid#aa00ff;
+    color: #000;
 }
 
 a:hover {
-    background-color: #fff;
+    background-color: #deb0f5;
+    color: #aa00ff;
     cursor: pointer;
 }
 
 a:active {
-    background-color: #deb0f5;
+   color: #deb0f5;
+   background-color: #aa00ff;
 }
 
 /* LAYOUT */
@@ -82,7 +85,7 @@ a:active {
 }
 
 .subheading li:not(:last-child) {
-    border-right: 1px dotted black;
+    border-right: 1px dotted #aa00ff;
     padding-right: 3rem;
 }
 
@@ -91,5 +94,5 @@ a:active {
 }
 
 .socials-icons img {
-    height: 3.5rem;
+    width: 3.5rem;
 }
