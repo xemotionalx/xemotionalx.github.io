@@ -39,6 +39,15 @@ a {
     border-bottom: 2px solid black;
 }
 
+a:hover {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+a:active {
+    background-color: #deb0f5;
+}
+
 /* LAYOUT */
 
 .container {
