@@ -9,7 +9,7 @@ export default function Header() {
       <div>
         <Image
           src={UnicornSkull}
-          alt="illustratiuon of unicorn skull crying sparkly tears"
+          alt="illustration of unicorn skull crying sparkly tears"
           height={150}
           width={150}
         />
