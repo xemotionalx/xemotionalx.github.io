@@ -6,7 +6,7 @@ export default function About() {
     <main>
       <Image src={Portrait} alt="illustrated portrait of MaiAda" height={300} width={300} /> 
       <p>
-        Hi! I'm MaiAda Carpano. I love <a href="">building websites</a> and teaching future web
+        Hi! I'm MaiAda Carpano. I love <a href="/projects">building websites</a> and teaching future web
         developers how to code.
       </p>
       <p>
