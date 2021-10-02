@@ -1,7 +1,7 @@
 export default function Navbar() {
   return (
-    <div>
-      <nav class="navigation">
+    <div className="nav"> 
+      <nav className="text-center">
         <ul>
           <li>
             <a href="projects.html"> web dev </a>
@@ -14,6 +14,6 @@ export default function Navbar() {
           </li>
         </ul>
       </nav>
-    </div>
+      </div>
   );
 }

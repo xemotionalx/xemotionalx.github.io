@@ -1,25 +1,30 @@
+import Image from 'next/image'
+import TwitterIcon from '../images/icons/twitter.svg'
+import TwitchIcon from '../images/icons/twitch.svg'
+import GithubIcon from '../images/icons/github.svg'
+
 export default function Footer() {
   return (
-    <div>
-      <footer>
-        <ul class="socials-icons">
+    <div className="footer">
+      <footer className="text-center">
+        <ul className="socials-icons">
           <li>
             <a href="https://www.twitter.com/xemocornx">
-              <img src="./images/icons/twitter.svg" alt="twitter" />
+              <Image src={TwitterIcon} alt="twitter" />
             </a>
           </li>
           <li>
             <a href="https://www.twitch.tv/xemotionalunicornx">
-              <img src="./images/icons/twitch.svg" alt="twitch" />
+              <Image src={TwitchIcon} alt="twitch" />
             </a>
           </li>
           <li>
             <a href="https://github.com/xemotionalx">
-              <img src="./images/icons/github.svg" alt="github" />
+              <Image src={GithubIcon} alt="github" />
             </a>
           </li>
         </ul>
       </footer>
-    </div>
+      </div>
   );
 }
