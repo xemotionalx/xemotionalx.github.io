@@ -1,19 +1,27 @@
 export default function Navbar() {
   return (
-    <div className="nav"> 
+    <div className="nav">
       <nav className="text-center">
         <ul>
           <li>
-            <a href="projects.html"> web dev </a>
+            <a href="/">home</a>
           </li>
           <li>
-            <a href="/pre-bootcamp-coding-class"> coding classes </a>
+            <a href="/about">about</a>
           </li>
           <li>
-            <a href="music.html"> music </a>
+            <a href="projects">web dev</a>
+          </li>
+          <li>
+            <a href="https://emotionalunicorn.com/pre-bootcamp-coding-class/">
+              coding classes
+            </a>
+          </li>
+          <li>
+            <a href="https://emotionalunicorn.com/assets/maiada-carpano-resume.pdf">resume</a>
           </li>
         </ul>
       </nav>
-      </div>
+    </div>
   );
 }

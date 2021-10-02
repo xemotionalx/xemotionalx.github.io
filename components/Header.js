@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Portrait from "../images/xemocornx-portrait.gif";
+import UnicornSkull from "../images/unicorn-skull-logo.png";
 import TextLogo from "../images/xemotionalunicornx-text-logo.GIF";
 
 export default function Header() {
@@ -8,16 +8,16 @@ export default function Header() {
     <header className="text-center">
       <div>
         <Image
-          src={Portrait}
-          alt="illustrated portrait of MaiAda Carpano"
-          height={300}
-          width={300}
+          src={UnicornSkull}
+          alt="illustratiuon of unicorn skull crying sparkly tears"
+          height={150}
+          width={150}
         />
       </div>
       <div>
         <Image
           src={TextLogo}
-          alt="heading: emotional unicorn"
+          alt="sparkly text: emotional unicorn"
           height={30}
           width={266}
         />
