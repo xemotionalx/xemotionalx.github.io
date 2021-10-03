@@ -1,4 +1,5 @@
-import Image from "next/image";
+import Image from "next/image"
+import Link from "next/link"
 import Portrait from "../images/xemocornx-portrait.gif"
 
 export default function About() {
@@ -6,7 +7,7 @@ export default function About() {
     <main>
       <Image src={Portrait} alt="illustrated portrait of MaiAda" height={300} width={300} /> 
       <p>
-        Hi! I&apos;m MaiAda Carpano. I love <a href="/projects">building websites</a> and teaching future web
+        Hi! I&apos;m MaiAda Carpano. I love <Link href="/projects">building websites</Link> and teaching future web
         developers how to code.
       </p>
       <p>
