@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import Portrait from "../images/xemocornx-portrait.GIF"
+import Portrait from "\../images/xemocornx-portrait.GIF"
 
 export default function About() {
   return (

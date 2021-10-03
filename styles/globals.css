@@ -144,6 +144,11 @@ nav li:not(:last-child) {
   width: 3.5rem;
 }
 
+.socials-icons li {
+  width: 2rem;
+  height: 2rem;
+}
+
 @media only screen and (max-width: 566px) {
     nav li:not(:last-child) {
         padding-right: 1rem;
@@ -230,6 +235,7 @@ nav li:not(:last-child) {
 .footer {
   padding-bottom: 3rem;
 }
+
 
 /* UTILITIES */
 .text-center {
