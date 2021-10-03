@@ -15,12 +15,12 @@ export default function Navbar() {
             <Link href="projects">web dev</Link>
           </li>
           <li>
-            <a href="https://emotionalunicorn.com/pre-bootcamp-coding-class/">
+            <a href="https://xemotionalx.github.io/pre-bootcamp-coding-class/">
               coding classes
             </a>
           </li>
           <li>
-            <a href="https://emotionalunicorn.com/assets/maiada-carpano-resume.pdf">resume</a>
+            <a href="https://xemotionalx.github.io/assets/maiada-carpano-resume.pdf">resume</a>
           </li>
         </ul>
       </nav>

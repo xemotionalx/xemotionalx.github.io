@@ -1,5 +1,5 @@
 import Image from "next/image"
-// import UnicornSkull from "../images/unicorn-skull-logo.png"
+import UnicornSkull from "../images/unicorn-skull-logo.PNG"
 import TextLogo from "../images/xemotionalunicornx-text-logo.GIF"
 
 export default function Header() {
@@ -7,12 +7,12 @@ export default function Header() {
     <div className="header">
     <header className="text-center">
       <div>
-        {/* <Image
+        <Image
           src={UnicornSkull}
           alt="illustration of unicorn skull crying sparkly tears"
           height={150}
           width={150}
-        /> */}
+        />
       </div>
       <div>
         <Image
