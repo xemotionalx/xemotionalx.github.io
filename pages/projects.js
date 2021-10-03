@@ -25,7 +25,7 @@ export default function Projects() {
               title="PBCC Website"
               description="The PBCC site was created for the 12 week pre-coding bootcamp I ran on Twitch. This was created with HTML and CSs with some basic CSS and Javascript animations. Through the course, I used this template as a model for students to build off of."
               githubLink="https://github.com/xemotionalx/pre-bootcamp-coding-class"
-              siteLink="https://emotionalunicorn.com/pre-bootcamp-coding-class/"
+              siteLink="https://precodingbootcamp.com"
             />
           </div>
       </div>
