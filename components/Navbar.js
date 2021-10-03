@@ -15,7 +15,7 @@ export default function Navbar() {
             <Link href="projects">web dev</Link>
           </li>
           <li>
-            <a href="https://xemotionalx.github.io/pre-bootcamp-coding-class/">
+            <a href="https://precodingbootcamp.com">
               coding classes
             </a>
           </li>
