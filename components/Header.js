@@ -1,6 +1,6 @@
-import Image from "next/image";
-import UnicornSkull from "../images/unicorn-skull-logo.png";
-import TextLogo from "../images/xemotionalunicornx-text-logo.GIF";
+import Image from "next/image"
+import UnicornSkull from "../images/unicorn-skull-logo.png"
+import TextLogo from "../images/xemotionalunicornx-text-logo.GIF"
 
 export default function Header() {
   return (

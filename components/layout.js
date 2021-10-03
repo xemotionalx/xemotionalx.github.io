@@ -7,7 +7,7 @@ export default function Layout({ children }) {
   return (
     <div>
       <Head>
-      <link href="https://fonts.googleapis.com/css?family=Lato|Slabo+13px" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css?family=Lato|Slabo+13px&display=swap" rel="stylesheet" />
       </Head>
       <div className="container">
         <Header />

@@ -1,16 +1,18 @@
+import Link from "next/link"
+
 export default function Navbar() {
   return (
     <div className="nav">
       <nav className="text-center">
         <ul>
           <li>
-            <a href="/">home</a>
+            <Link href="/">home</Link>
           </li>
           <li>
-            <a href="/about">about</a>
+            <Link href="about">about</Link>
           </li>
           <li>
-            <a href="projects">web dev</a>
+            <Link href="projects">web dev</Link>
           </li>
           <li>
             <a href="https://emotionalunicorn.com/pre-bootcamp-coding-class/">

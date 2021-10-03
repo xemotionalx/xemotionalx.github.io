@@ -6,7 +6,7 @@ export default function About() {
     <main>
       <Image src={Portrait} alt="illustrated portrait of MaiAda" height={300} width={300} /> 
       <p>
-        Hi! I'm MaiAda Carpano. I love <a href="/projects">building websites</a> and teaching future web
+        Hi! I&apos;m MaiAda Carpano. I love <a href="/projects">building websites</a> and teaching future web
         developers how to code.
       </p>
       <p>
@@ -17,7 +17,7 @@ export default function About() {
         inSites to Sharp Shirter.
       </p>
       <p>
-        At the time, I didn't know it was possible for me to turn my nerdy hobby into a full
+        At the time, I didn&apos;t know it was possible for me to turn my nerdy hobby into a full
         time job. I got a Graduate Certificate in Teaching and taught middle
         school for 6 years.
       </p>
@@ -27,7 +27,7 @@ export default function About() {
         after, I began working at Creditly Corp. as a frontend software engineer.
       </p>
       <p>
-        Since then, I've gained an extensive skillset as a developer and a UX/UI
+        Since then, I&apos;ve gained an extensive skillset as a developer and a UX/UI
         designer, from wireframing and creating mocks in Sketch, to building out
         features in Javascript frameworks suck as React, React Native and Next
         JS.
