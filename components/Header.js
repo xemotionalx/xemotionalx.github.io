@@ -1,5 +1,5 @@
 import Image from "next/image"
-import UnicornSkull from "../images/unicorn-skull-logo.png"
+import UnicornSkull from "../images/unicorn-skull-logo.PNG"
 import TextLogo from "../images/xemotionalunicornx-text-logo.GIF"
 
 export default function Header() {
