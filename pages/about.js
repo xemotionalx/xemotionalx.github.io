@@ -8,7 +8,7 @@ export default function About() {
       <Image src={Portrait} alt="illustrated portrait of MaiAda" height={300} width={300} /> 
       <p>
         Hi! I&apos;m MaiAda Carpano. I love building websites and teaching future web
-        developers how to code.
+        developers how to code. :)
       </p>
       <p>
         I started writing code over 20 years ago when I taught myself HTML and
